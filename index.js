@@ -35,8 +35,6 @@ window.onload = () => {
       cards.id = r.toString() + "-" + c.toString();
       cards.src = imageOrder.shift() + ".jpg";
       //Draging Funtionality
-      // cards.addEventListener("dragstart", dragStart);
-      // cards.addEventListener("dragend", dragEnd);
       cards.addEventListener("dragstart", dragStart);
       cards.addEventListener("dragover", dragOver);
       cards.addEventListener("dragenter", dragEnter);
