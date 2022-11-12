@@ -1,0 +1,23 @@
+.heading {
+  width: 400px;
+  height: 150px;
+}
+body {
+  text-align: center;
+  color: rgb(40, 98, 98);
+  font-family: "Times New Roman", Times, serif;
+}
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  height: 370px;
+  width: 370px;
+  background-color: rgb(77, 146, 189);
+  border: 8px solid;
+  margin: 0 auto;
+}
+#board img {
+  width: 120px;
+  height: 120px;
+  border: 0.4px solid #000000;
+}
