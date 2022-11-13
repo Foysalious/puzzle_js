@@ -5,7 +5,6 @@ let otherCard;
 let parentofFill;
 let swapElement;
 let doesExit;
-
 let turn = 0;
 const imageOrder = [
   "images/1",
@@ -73,18 +72,18 @@ function dragLeave() {}
 function dragDrop() {
   otherCard = this;
 
-  // currentCard.style.visibility = "visible";
-  // if (doesExit) {
-  //   parentofFill.append(otherCard);
-  // }
-  // parentofFill.children[1].value = "";
-  // this.append(otherCard);
+  currentCard.style.visibility = "visible";
+  if (doesExit) {
+    parentofFill.append(otherCard);
+  }
+  parentofFill.children[1].value = "";
+  this.append(otherCard);
 }
 function dragEnd() {
   let currentImg = currentCard.src;
   let otherImg = otherCard.src;
   currentCard.src = otherImg;
   otherCard.src = currentImg;
-  // turns += 1;
-  // document.getElementById("turns").innerText = turns;
+  turns += 1;
+  document.getElementById("turns").innerText = turns;
 }
